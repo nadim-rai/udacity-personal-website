@@ -1,0 +1,66 @@
+@import url("general.css");
+@import url("header.css");
+@import url("footer.css");
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+.travel_card{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card_text{
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    background-color: #000;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.btn{
+    width: 100%;
+    padding: 5px;
+    margin: 9px 0;
+    font-size: 18px;
+    color: #000;
+    border-radius: 5px;
+    background-color: #ffd400;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+}
+.footer{
+    margin-top: 15px;
+    padding: 15px;
+    color: #ffd400;
+    text-align: center;
+    background-color: #212121;
+}
+
+@media (min-width: 568px) {
+    .travel_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .travel_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+  }
