@@ -1,0 +1,38 @@
+.header{
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #ffd400;
+}
+.header h1{
+    text-align: center;
+}
+.navbar{
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    font-size: 19px;
+    text-decoration: none;
+    color: #000;
+  
+}
+.navbar a:hover{
+    text-decoration: underline;
+    color: #000;
+  
+}
+@media (min-width: 768px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+
+    }
+   .navbar{
+    margin-right: 0px;
+   }
+}
