@@ -1,0 +1,49 @@
+@import url("general.css");
+@import url("header.css");
+@import url("footer.css");
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+article img{
+    width: 100%;
+    height: auto;
+}
+article h1,h2{
+    margin: 20px 0;
+}
+article ul{
+    width: 90%;
+    margin: 19px;
+}
+.about_container{
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f3f3ff;
+}
+.about_container img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.related_blogs{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.related_blogs a{
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 25px;
+    }
+    .about_container{
+        margin-top: 0;
+    }
+}
