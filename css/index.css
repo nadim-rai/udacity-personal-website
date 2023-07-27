@@ -1,0 +1,89 @@
+@import url("general.css");
+@import url("header.css");
+@import url("footer.css");
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.travel_card{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card_text{
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    background-color: #000;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.btn{
+    width: 100%;
+    padding: 5px;
+    margin: 9px 0;
+    font-size: 18px;
+    color: #000;
+    border-radius: 5px;
+    background-color: #ffd400;
+    cursor: pointer;
+}
+.btn a{
+    color: #000;
+    text-decoration: none;
+}
+
+@media (min-width: 568px) {
+    .travel_grid{
+        display: grid;
+        grid-template-areas: 
+        "np np ch ch"
+        "np np ch ch"
+        "hk hk it it"
+        "hk hk it it"
+        "sp sp jp jp"
+        "sp sp jp jp";
+        gap: 25px;
+    }
+    #nepal{
+        grid-area: np;
+    }
+    #china{
+        grid-area: ch;
+    }
+    #hongkong{
+        grid-area: hk;
+    }
+    #japan{
+        grid-area: jp;
+    }
+    #italy{
+        grid-area: it;
+    }
+    #spain{
+        grid-area: sp;
+    }
+  }
+@media (min-width: 768px) {
+    .travel_grid{
+        display: grid;
+        grid-template-areas: 
+        "np np np np ch ch hk hk"
+        "np np np np ch ch hk hk"
+        "np np np np jp jp jp jp"
+        "np np np np jp jp jp jp"
+        "it it sp sp jp jp jp jp"
+        "it it sp sp jp jp jp jp";
+        gap: 25px;
+    }
+
+  }
