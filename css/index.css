@@ -41,7 +41,9 @@ img{
     color: #000;
     text-decoration: none;
 }
-
+.btn a:hover{
+    text-decoration: underline;
+}
 @media (min-width: 568px) {
     .travel_grid{
         display: grid;
