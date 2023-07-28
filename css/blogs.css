@@ -39,6 +39,9 @@ img{
 .btn a{
     text-decoration: none;
 }
+.btn a:hover{
+    text-decoration: underline;
+}
 .footer{
     margin-top: 15px;
     padding: 15px;
